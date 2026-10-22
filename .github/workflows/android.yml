@@ -1,14 +1,14 @@
 name: MotionForge Test
 
-'on':
-push:
-branches:
-- main
-workflow_dispatch:
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
-test:
-runs-on: ubuntu-latest
-steps:
-- name: Verify workflow
-run: echo "MotionForge workflow is working"
+    test:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Verify workflow
+          run: echo "MotionForge workflow is working"
