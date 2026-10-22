@@ -1,11 +1,11 @@
-name: MotionForge APK Build
-'on': workflow_dispatch
+name: MotionForge Test
+
+on:
+push
+
 jobs:
 test:
 runs-on: ubuntu-latest
 steps:
-- name: Check repository
-uses: actions/checkout@v4
-  - name: Check files
-    run: ls -la
-
+- name: Test workflow
+run: echo "MotionForge workflow syntax is working"
