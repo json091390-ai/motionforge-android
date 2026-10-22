@@ -1,6 +1,10 @@
 name: MotionForge Test
 
-on: [push]
+'on':
+push:
+branches:
+- main
+workflow_dispatch:
 
 jobs:
 test:
