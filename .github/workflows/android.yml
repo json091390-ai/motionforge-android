@@ -1,10 +1,10 @@
 name: MotionForge Test
 
-'on': push
+on: [push]
 
 jobs:
 test:
 runs-on: ubuntu-latest
 steps:
-- run: echo "Workflow is working"
-
+- name: Verify workflow
+run: echo "MotionForge workflow is working"
